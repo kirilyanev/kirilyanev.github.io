@@ -1,14 +1,17 @@
 import './App.css';
 
-import Project from './components/Project/Project.js';
+import ProjectList from './components/ProjectList/ProjectList.js';
+
+
 
 function App() {
-  return (
-    <div>
-      <h1>This website is currently under construction</h1>
-      <Project />
-    </div>
-  );
+    return (
+        <div>
+            <h1>This website is currently under construction</h1>
+
+            <ProjectList />
+        </div>
+    );
 }
 
 export default App;
