@@ -12,10 +12,20 @@ code {
     monospace;
 }
 
+
+
+h1 {
+  text-align: center;
+}
+
 .main-container {
   display: inline-block;
 }
 
-h1 {
-  text-align: center;
+.selected-project-details {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
 }

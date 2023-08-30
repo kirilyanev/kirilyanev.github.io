@@ -12,7 +12,6 @@ const Sidebar = ({
             <p>Gender: male</p>
             <p>E-mail: kl_yanev@abv.bg</p>
             <p>Contact: +359/886-891-555</p>
-            <p>Name: Kiril Yanev</p>
 
         </aside>
     );
