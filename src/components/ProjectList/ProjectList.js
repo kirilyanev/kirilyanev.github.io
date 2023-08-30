@@ -6,7 +6,7 @@ import projects from "../../data/projectsData.js";
 
 class ProjectList extends Component {
     render () {
-        // projectsData.map(project => console.log(project));
+        // projects.map(project => console.log(project));
         return (
             <ul className="project-list">
 

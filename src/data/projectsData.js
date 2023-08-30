@@ -1,7 +1,7 @@
 const projectsData = [
     {
         name: 'Guess the number',
-        image: 'guess-the-number.jpg',
+        image: 'guess-the-number.png',
         alt: 'Image of the game',
         url: 'https://kirilyanev.github.io/Guess-the-number/',
         description: 'A simple game where you have to guess a random number.'

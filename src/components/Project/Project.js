@@ -3,10 +3,11 @@ import './Project.css';
 function Project(props) {
 
     const url = props.url;
-    // console.log(props);
+    const imagePath = process.env.PUBLIC_URL + '/' + props.image;
+
     return (
         <div className='project'>
-            <img src={props.image} alt={props.alt} />
+            <img src={imagePath} alt={props.alt} />
             <div id='project-info'>
                 <p>{props.name}</p>
                 <p>{props.description}</p>
