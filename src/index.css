@@ -19,11 +19,18 @@ h1 {
 }
 
 
-.main-container {
-  display: inline-block;
+.app-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line when there's not enough space */
 }
 
-.selected-project-details {
+.main-container {
+  display: inline-block;
+  flex: 1; /* Allow it to grow and shrink */
+  /* Add any other styles you need for .main-container */
+}
+
+/* .selected-project-details {
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
@@ -32,11 +39,21 @@ h1 {
   position: sticky;
   top: 20px;
 }
+ */
 
+ .selected-project-details {
+  display: inline-block;
+  flex: 1; /* Allow it to grow and shrink */
+  vertical-align: top;
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* Add any other styles you need for .selected-project-details */
+}
 
+/* Add a media query to change the flex-direction when the window is narrow */
 @media (max-width: 768px) {
-  .selected-project-details {
-    position: static;
-    top: 20px;
+  .container {
+    flex-direction: column; /* Stack elements vertically */
   }
 }
