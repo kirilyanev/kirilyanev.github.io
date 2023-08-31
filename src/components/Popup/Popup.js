@@ -15,7 +15,7 @@ function Popup() {
       <div className="popup">
         <div className="popup-content">
           <p>This website is in the early stage of development</p>
-          <button onClick={hidePopup}>OK</button>
+          <button className="ok-button" onClick={hidePopup}>OK</button>
         </div>
       </div>
     )

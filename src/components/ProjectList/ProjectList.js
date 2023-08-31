@@ -18,7 +18,14 @@ class ProjectList extends Component {
     // Function to toggle the "Show more"/"Hide" state for a project
     toggleClick = (index) => {
         const { projectClickedStates } = this.state;
-        projectClickedStates[index] = !projectClickedStates[index];
+        // projectClickedStates[index] = !projectClickedStates[index];
+        for (let i = 0; i < projectClickedStates.length; i++) {
+            if (i === index) {
+                projectClickedStates[index] = !projectClickedStates[index];
+            } else {
+                projectClickedStates[i] = false;
+            }
+        }
         this.setState({ projectClickedStates });
     };
 
@@ -38,6 +45,7 @@ class ProjectList extends Component {
                             isClicked={this.state.projectClickedStates[index]}
                             toggleClick={() => this.toggleClick(index)}
                             handleProjectClick={this.props.handleProjectClick}
+                            handleShowMore={this.props.handleShowMore}
                         />
                     );
                 })}
