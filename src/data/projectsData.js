@@ -19,7 +19,7 @@ const projectsData = [
         description: 'The famous Rock Paper Scrissors game.',
         info: `This is another project where i use basic javascript to process the input from the user and to return a 
         response in a type of message. Here, as in my first project i use Math.random(), but this time for the choice of a 
-        weapon for the computer :)`
+        weapon for the computer.`
     },
     {
         name: 'Hangman',
@@ -28,7 +28,9 @@ const projectsData = [
         alt: 'Image of the game',
         url: 'https://kirilyanev.github.io/Hangman/',
         description: 'Hangman game.',
-        info: 'For more info come back in a few days :)'
+        info: `My third game is again based on javascript. Using user input, basic DOM manipulations to update 
+        the searched word, the picture of the hangman, disabling the button, that is pressed once by the user and 
+        returning a WIN/LOSE message at the end.`
     },
     {
         name: 'Calculator',
@@ -37,7 +39,8 @@ const projectsData = [
         alt: 'calculator',
         url: 'https://kirilyanev.github.io/Calculator/',
         description: 'A simple calculator.',
-        info: 'For more info come back in a few days :)'
+        info: `For this calculator app i used only one html and one css file. The script is inside the html and it 
+        consist just 4 simple javascript functions to perform the basic calculations`
     },
     {
         name: 'Weather-app',
@@ -46,7 +49,9 @@ const projectsData = [
         alt: 'Weather-app',
         url: 'https://kirilyanev.github.io/Weather-app/',
         description: 'A weather application.',
-        info: 'For more info come back in a few days :)'
+        info: `This is a single page application. My goal for this project was to use my newly acquired knowledge from a courses in 
+        Softuni about architecture, separation of concerns and about REST API. I make a use of javascript async functions to make a fetch api calls
+         to the server, after the data is fetched, it is processed and displayed to the end user.`
     },
     {
         name: 'Calendar',
@@ -55,7 +60,7 @@ const projectsData = [
         alt: 'Calendar-app',
         url: 'https://kirilyanev.github.io/Calendar/',
         description: 'A Calendar application.',
-        info: 'For more info come back in a few days :)'
+        info: 'This is a basic calendar. In this project i wanted to practice my skill for working with dates in javascript, that\'s all i can say about it.'
     },
 ];
 
