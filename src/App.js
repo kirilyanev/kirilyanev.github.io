@@ -43,9 +43,12 @@ function App() {
                 {selectedProject && showMore ? (
                     <aside className="selected-project-details">
                         {/* <h2>Selected Project Details</h2> */}
-                        <h2>{selectedProject.name}</h2>
+                        <h2 className='title'>{selectedProject.name}</h2>
                         <p>Description: {selectedProject.description}</p>
-                        <p>URL: <a href={selectedProject.url} target="_blank" rel="noopener noreferrer">{selectedProject.url}</a></p>
+                        {/* <p>URL: <a href={selectedProject.url} target="_blank" rel="noopener noreferrer">{selectedProject.url}</a></p> */}
+                        <span id='snapshot-title'>Snapshot of the app</span>
+                        <img className='snapshot' src={process.env.PUBLIC_URL + '/' + `${selectedProject.snapshot}`} alt={'Snaphot'} />
+                        <p id='info'>{selectedProject.info}</p>
                     </aside>
                 ) : 
                 <aside className="selected-project-details">

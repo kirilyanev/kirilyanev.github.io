@@ -13,14 +13,15 @@ function Project(props) {
                 <p>{props.description}</p>
                 <a href={url} target="_blank" rel="noopener noreferrer">{props.url}</a>
                 {/* <button onClick={() => props.handleProjectClick(props.project)}> */}
-                <button onClick={() => {
+                <button className='project-button' onClick={() => {
                     props.handleProjectClick(props.project);
                     props.toggleClick();
                     props.handleShowMore(props.isClicked);
                 }}>
 
-
-                    {props.isClicked ? 'Hide' : 'Show more'}
+                    <span className="button-text">
+                        {props.isClicked ? 'Hide' : 'Show more'}
+                    </span>
                 </button>
 
             </div>

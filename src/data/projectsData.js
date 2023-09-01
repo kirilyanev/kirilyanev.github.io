@@ -2,44 +2,60 @@ const projectsData = [
     {
         name: 'Guess the number',
         image: 'guess-the-number.jpg',
+        snapshot: 'guess-the-number-snapshot.png',
         alt: 'Image of the game',
         url: 'https://kirilyanev.github.io/Guess-the-number/',
-        description: 'A simple game where you have to guess a random number.'
+        description: 'A simple game where you have to guess a random number.',
+        info: `This is my first mini project. I used Math.random() for the choice of a random number and some basic DOM manipulation to 
+        take the input from the user and javascript if/else statements to process it. The result then is returned to the end user. Nothing special, but i decided to put it
+         on display. It is my first finished project, with the most basic skills i had back then :)`
     },
     {
         name: 'Rock Paper Scrissors',
         image: 'rock-paper-scrissors.jpeg',
+        snapshot: 'rock-paper-scrissors-snapshot.png',
         alt: 'Image of the game',
         url: 'https://kirilyanev.github.io/RockPaperScrissors/',
-        description: 'The famous Rock Paper Scrissors game.'
+        description: 'The famous Rock Paper Scrissors game.',
+        info: `This is another project where i use basic javascript to process the input from the user and to return a 
+        response in a type of message. Here, as in my first project i use Math.random(), but this time for the choice of a 
+        weapon for the computer :)`
     },
     {
         name: 'Hangman',
         image: 'hangman.png',
+        snapshot: 'hangman-snapshot.png',
         alt: 'Image of the game',
         url: 'https://kirilyanev.github.io/Hangman/',
-        description: 'Hangman game.'
+        description: 'Hangman game.',
+        info: 'For more info come back in a few days :)'
     },
     {
         name: 'Calculator',
         image: 'calculator.png',
+        snapshot: 'calculator-snapshot.png',
         alt: 'calculator',
         url: 'https://kirilyanev.github.io/Calculator/',
-        description: 'A simple calculator.'
+        description: 'A simple calculator.',
+        info: 'For more info come back in a few days :)'
     },
     {
         name: 'Weather-app',
         image: 'weather-app.png',
+        snapshot: 'weather-app-snapshot.png',
         alt: 'Weather-app',
         url: 'https://kirilyanev.github.io/Weather-app/',
-        description: 'A weather application.'
+        description: 'A weather application.',
+        info: 'For more info come back in a few days :)'
     },
     {
         name: 'Calendar',
         image: 'calendar.png',
+        snapshot: 'calendar-snapshot.png',
         alt: 'Calendar-app',
         url: 'https://kirilyanev.github.io/Calendar/',
-        description: 'A Calendar application.'
+        description: 'A Calendar application.',
+        info: 'For more info come back in a few days :)'
     },
 ];
 

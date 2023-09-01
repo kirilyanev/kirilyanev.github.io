@@ -3,6 +3,8 @@
     border-radius: 10px;
     margin: 5px;
     width: 550px;
+
+    position: relative;
 }
 
 .project img {
@@ -17,6 +19,32 @@
     margin: 5px;
 }
 
-button {
+.project-button {
     margin: 10px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+
+    position: absolute;
+    top: 71px;
+    left: 440px;
+
+
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    width: 90px; /* Fixed width for the button */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-text {
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* .project-button:hover {
+    background-color: #d2d2d2;
+} */
+
+.project-button .button-text {
+    opacity: 1; /* Ensure the text is visible */
 }
