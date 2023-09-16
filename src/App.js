@@ -24,7 +24,7 @@ function App() {
         setSelectedProject(project);
     };
 
-    gsap.fromTo('.selected-project-details', {duration: 1, y: '-100%', ease: 'bounce'}, { duration: 1, y: '0%', ease: 'bounce'});
+    gsap.fromTo('.selected-project-details', {duration: 1, y: '-20%', ease: 'bounce'}, { duration: 1, y: '0%', ease: 'bounce'});
 
     return (
         <div className='app'>
