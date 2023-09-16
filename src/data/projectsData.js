@@ -60,7 +60,7 @@ const projectsData = [
         alt: 'Calendar-app',
         url: 'https://kirilyanev.github.io/Calendar/',
         description: 'A Calendar application.',
-        info: 'This is a basic calendar. In this project i wanted to practice my skill for working with dates in javascript, that\'s all i can say about it.'
+        info: 'This is a basic calendar. In this project i wanted to practice my skill for working with dates in javascript.'
     },
 ];
 
