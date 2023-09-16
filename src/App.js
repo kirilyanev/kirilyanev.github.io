@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import gsap from 'gsap';
 
 import ProjectList from './components/ProjectList/ProjectList.js';
 // import Sidebar from './components/Sidebar/Sidebar.js';
@@ -23,10 +24,12 @@ function App() {
         setSelectedProject(project);
     };
 
+    gsap.fromTo('.selected-project-details', {duration: 1, y: '-100%', ease: 'bounce'}, { duration: 1, y: '0%', ease: 'bounce'});
+
     return (
         <div className='app'>
             <Popup />
-            <h1>My projects</h1>
+            <h1 className='header'>My projects</h1>
             <div className='app-container'>
 
                 {/* <Sidebar /> */}
