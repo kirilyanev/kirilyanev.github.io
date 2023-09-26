@@ -28,17 +28,8 @@ function App() {
 
     return (
         <div className='app'>
-<<<<<<< Updated upstream
-            <Popup />
-<<<<<<< Updated upstream
-            <h1 className='header'>My projects</h1>
-=======
-            <h1>My projects</h1>
-=======
             {/* <Popup /> */}
             <h1 className='header'>My projects</h1>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
             <div className='app-container'>
 
                 {/* <Sidebar /> */}
