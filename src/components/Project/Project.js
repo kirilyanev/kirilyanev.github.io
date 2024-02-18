@@ -9,7 +9,7 @@ function Project(props) {
         <div className='project'>
             <img src={imagePath} alt={props.alt} />
             <div id='project-info'>
-                <p>{props.name}</p>
+                <h3>{props.name}</h3>
                 <p>{props.description}</p>
                 <a href={url} target="_blank" rel="noopener noreferrer">{props.url}</a>
                 {/* <button onClick={() => props.handleProjectClick(props.project)}> */}
