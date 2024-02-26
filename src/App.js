@@ -4,7 +4,7 @@ import gsap from 'gsap';
 
 import ProjectList from './components/ProjectList/ProjectList.js';
 // import Sidebar from './components/Sidebar/Sidebar.js';
-import Popup from './components/Popup/Popup.js';
+// import Popup from './components/Popup/Popup.js';
 
 function App() {
     const [showMore, setShowMore] = useState(true);

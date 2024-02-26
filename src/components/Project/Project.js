@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Project.css';
 
 function Project(props) {
@@ -38,7 +38,7 @@ export default Project;
 // </button>
 
 
-{/* <button onClick={() => {
-    props.handleProjectClick(props.project);
-    props.clickToggle();
-}}></button> */}
+// {<button onClick={() => {
+//     props.handleProjectClick(props.project);
+//     props.clickToggle();
+// }}></button>}
