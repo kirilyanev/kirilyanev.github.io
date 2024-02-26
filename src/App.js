@@ -50,7 +50,7 @@ function App() {
                         <p>Description: {selectedProject.description}</p>
                         {/* <p>URL: <a href={selectedProject.url} target="_blank" rel="noopener noreferrer">{selectedProject.url}</a></p> */}
                         <span id='snapshot-title'>Snapshot of the app</span>
-                        <img className='snapshot' src={process.env.PUBLIC_URL + '/' + `${selectedProject.snapshot}`} alt={'Snaphot'} />
+                        <img className='snapshot' src={`${process.env.PUBLIC_URL}/${selectedProject.snapshot}`} alt={'Snapshot'} />
                         <p id='info'>{selectedProject.info}</p>
                     </aside>
                 ) : 
