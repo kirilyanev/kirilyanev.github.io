@@ -13,16 +13,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Debug
+        run: |
+          ls -al
+          git branch -a
+
       - name: Build and deploy
         run: |
-          # Replace these commands with your build commands
           npm install
           npm run build
 
-          # Deploy the built code to gh-pages branch
           git checkout gh-pages
-          git rm -rf .
-          cp -r build/. .
+          ls -al
+          git status
+          git pull origin gh-pages
+          cp -r build/* .
           git add .
+          git status
           git commit -m "Deploying to gh-pages"
           git push origin gh-pages
