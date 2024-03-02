@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - main
+      - gh-pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/gh-pages' || github.ref == 'refs/heads/main')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -23,12 +24,11 @@ jobs:
           npm install
           npm run build
 
-          git checkout gh-pages
-          ls -al
-          git status
-          git pull origin gh-pages
-          cp -r build/* .
-          git add .
-          git status
-          git commit -m "Deploying to gh-pages"
-          git push origin gh-pages
+          if [ "${GITHUB_REF##*/}" == "main" ]; then
+            git checkout gh-pages
+            git pull origin gh-pages
+            cp -r build/* .
+            git add .
+            git commit -m "Deploying to gh-pages"
+            git push origin gh-pages
+          fi
