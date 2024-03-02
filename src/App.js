@@ -3,7 +3,7 @@ import './App.css';
 import gsap from 'gsap';
 
 import ProjectList from './components/ProjectList/ProjectList.js';
-// import Sidebar from './components/Sidebar/Sidebar.js';
+// import PersonalInfo from './components/PersonalInfo/PersonalInfo.js';
 // import Popup from './components/Popup/Popup.js';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         setSelectedProject(project);
     };
 
-    gsap.fromTo('.selected-project-details', {duration: 1, y: '-20%', ease: 'bounce'}, { duration: 1, y: '0%', ease: 'bounce'});
+    gsap.fromTo('.selected-project-details', { duration: 1, y: '-20%', ease: 'bounce' }, { duration: 1, y: '0%', ease: 'bounce' });
 
     return (
         <div className='app'>
@@ -32,7 +32,7 @@ function App() {
             <h1 className='header'>My projects</h1>
             <div className='app-container'>
 
-                {/* <Sidebar /> */}
+                {/* <PersonalInfo /> */}
 
                 <main className='main-container'>
                     <ProjectList
@@ -53,10 +53,10 @@ function App() {
                         <img className='snapshot' src={`${process.env.PUBLIC_URL}/${selectedProject.snapshot}`} alt={'Snapshot'} />
                         <p id='info'>{selectedProject.info}</p>
                     </aside>
-                ) : 
-                <aside className="selected-project-details">
-                    <h2>Click 'show more' button for details</h2>
-                </aside>
+                ) :
+                    <aside className="selected-project-details">
+                        <h2>Click 'show more' button for details</h2>
+                    </aside>
                 }
             </div>
 
