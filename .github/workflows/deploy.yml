@@ -4,31 +4,21 @@ on:
   push:
     branches:
       - main
-      - gh-pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/gh-pages' || github.ref == 'refs/heads/main')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Debug
-        run: |
-          ls -al
-          git branch -a
-
-      - name: Build and deploy
+      - name: Install dependencies and build
         run: |
           npm install
           npm run build
 
-          if [ "${GITHUB_REF##*/}" == "main" ]; then
-            git checkout gh-pages
-            git pull origin gh-pages
-            cp -r build/* .
-            git add .
-            git commit -m "Deploying to gh-pages"
-            git push origin gh-pages
-          fi
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
